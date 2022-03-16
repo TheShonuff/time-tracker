@@ -29,24 +29,75 @@ h4 {
   padding-top: 55%;
 }
 
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: hsl(235, 45%, 61%);
+  font-weight: 400;
+  margin-left: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
 .wrapper {
   display: grid;
+  width: 50%;
   grid-template-columns: repeat(auto-fill, 200px);
   row-gap: 20px;
   column-gap: 20px;
-  margin-top: 20%;
-  margin-left: 10%;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-bottom: 20%;
 }
 
 .profile {
-  background-color: hsl(246, 80%, 60%);
+  background-color: hsl(235, 46%, 20%);
   grid-column: 1;
   grid-row-start: 1;
   grid-row-end: span 2;
-  height: 450px;
+  height: 430px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.profileInfoContainer {
+  background-color: hsl(246, 80%, 60%);
+  height: 65%;
+  position: relative;
   border-radius: 5%;
 }
 
+.Avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: medium solid white;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.profileName {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.dataSelector {
+  margin-top: 80%;
+}
 .work {
   background-color: hsl(15, 100%, 70%);
   border-radius: 5%;
@@ -210,4 +261,38 @@ h4 {
 .cardTitle img {
   height: 3px;
   width: 15px;
+}
+
+.workContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+
+.studyContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+
+.exerciseContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+
+.socialContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+
+.playContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+.selfcareContent:hover {
+  cursor: pointer;
+  background-color: rgb(52, 57, 123);
+}
+
+h6:hover {
+  color: white;
+  cursor: pointer;
 }
