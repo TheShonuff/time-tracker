@@ -22,7 +22,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style></style>
   </head>
-  <body>
+  <body onload="javascript:loadJson()">
     <main>
       <div class="wrapper">
         <div class="profile">
@@ -37,7 +37,7 @@
               <span class="profileName">Jeremy Robson</span>
             </div>
             <div class="dataSelector">
-              <h6>Daily</h6>
+              <a onclick="loadDaily()"><h6>Daily</h6></a>
               <h6>Weekly</h6>
               <h6>Monthly</h6>
             </div>
@@ -150,4 +150,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
+  <script src="somejava.js"></script>
 </html>

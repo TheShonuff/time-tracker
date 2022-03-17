@@ -51,7 +51,7 @@ h6 {
 
 .wrapper {
   display: grid;
-  width: 50%;
+  width: 60%;
   grid-template-columns: repeat(auto-fill, 200px);
   row-gap: 20px;
   column-gap: 20px;
@@ -263,6 +263,9 @@ h6 {
   width: 15px;
 }
 
+.cardTitle img:hover {
+  cursor: pointer;
+}
 .workContent:hover {
   cursor: pointer;
   background-color: rgb(52, 57, 123);
