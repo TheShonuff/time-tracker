@@ -1,0 +1,329 @@
+@media (max-width: 400px) {
+  .wrapper {
+    display: grid;
+    width: 300px;
+    height: 1400px;
+    /* grid-template-rows: repeat(6, 100px); */
+    grid-template-columns: 330px;
+    grid-template-rows: repeat(auto-fill, 180px) 160px 160px 160px 160px 160px 160px;
+    row-gap: 30px;
+    margin-top: 20%;
+    margin-left: 4%;
+    margin-bottom: 20%;
+  }
+
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 7%;
+  }
+
+  h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 500;
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 55%;
+    display: inline;
+    position: relative;
+  }
+
+  h5 {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 400;
+    margin-left: 36%;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: hsl(235, 45%, 61%);
+    font-weight: 400;
+
+    margin-top: 10%%;
+    margin-bottom: 8%;
+    display: inline;
+  }
+
+  .cardInfo {
+    display: flex;
+  }
+  .previousWeek {
+    display: relative;
+    margin-top: 20%;
+    margin-left: 50%;
+  }
+
+  .profile {
+    background-color: hsl(235, 46%, 20%);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 180px;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+  .profileInfoContainer {
+    background-color: hsl(246, 80%, 60%);
+    height: 65%;
+    position: relative;
+    border-radius: 5%;
+  }
+  .profileData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+
+  .Avatar {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: medium solid white;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .profileName {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 15%;
+  }
+
+  .dataSelector {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 290px;
+    margin-left: 4%;
+    position: relative;
+  }
+  .work {
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+
+  .workContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .play {
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .play img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+  .playContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .study {
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .study img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+
+  .studyContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .exercise {
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .exercise img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+
+  .exerciseContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .social {
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .social img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+
+  .socialContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .selfcare {
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .selfcare img {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+    height: 35%;
+    width: 28%;
+    margin-top: -1%;
+  }
+
+  .selfcareContent {
+    background-color: hsl(235, 46%, 20%);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    height: 100%;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .cardTitle {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+
+  .cardTitle img {
+    height: 3px;
+    width: 15px;
+  }
+
+  .cardTitle img:hover {
+    cursor: pointer;
+  }
+  .workContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+
+  .studyContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+
+  .exerciseContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+
+  .socialContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+
+  .playContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+  .selfcareContent:hover {
+    cursor: pointer;
+    background-color: rgb(52, 57, 123);
+  }
+
+  h6:hover {
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -17,12 +17,13 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobilestyle.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style></style>
   </head>
-  <body onload="javascript:loadJson()">
+  <body onload="javascript:loadWeekly()">
     <main>
       <div class="wrapper">
         <div class="profile">
@@ -38,8 +39,8 @@
             </div>
             <div class="dataSelector">
               <a onclick="loadDaily()"><h6>Daily</h6></a>
-              <h6>Weekly</h6>
-              <h6>Monthly</h6>
+              <a onclick="loadWeekly()"><h6>Weekly</h6></a>
+              <a onclick="loadMonthly()"><h6>Monthly</h6></a>
             </div>
           </div>
         </div>
@@ -65,7 +66,7 @@
           <img src="images/icon-play.svg" alt="playicon" />
           <div class="playContent">
             <div class="cardTitle">
-              <h2>Work</h2>
+              <h2>Play</h2>
               <img src="images/icon-ellipsis.svg" alt="ellipsis" />
             </div>
             <div class="cardInfo">
@@ -81,7 +82,7 @@
           <img src="images/icon-study.svg" alt="studyicon" />
           <div class="studyContent">
             <div class="cardTitle">
-              <h2>Work</h2>
+              <h2>Study</h2>
               <img src="images/icon-ellipsis.svg" alt="ellipsis" />
             </div>
             <div class="cardInfo">
@@ -97,7 +98,7 @@
           <img src="images/icon-exercise.svg" alt="exerciseicon" />
           <div class="exerciseContent">
             <div class="cardTitle">
-              <h2>Work</h2>
+              <h2>Exercise</h2>
               <img src="images/icon-ellipsis.svg" alt="ellipsis" />
             </div>
             <div class="cardInfo">
@@ -113,7 +114,7 @@
           <img src="images/icon-social.svg" alt="socialicon" />
           <div class="socialContent">
             <div class="cardTitle">
-              <h2>Work</h2>
+              <h2>Social</h2>
               <img src="images/icon-ellipsis.svg" alt="ellipsis" />
             </div>
             <div class="cardInfo">
@@ -129,7 +130,7 @@
           <img src="images/icon-self-care.svg" alt="selfcareicon" />
           <div class="selfcareContent">
             <div class="cardTitle">
-              <h2>Work</h2>
+              <h2>Self Care</h2>
               <img src="images/icon-ellipsis.svg" alt="ellipsis" />
             </div>
             <div class="cardInfo">
