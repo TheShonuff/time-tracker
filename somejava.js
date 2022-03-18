@@ -128,7 +128,24 @@ async function loadJson() {
   return data;
 }
 
+let daily = false;
+let weekly = false;
+let monthly = false;
+const weeklyState = document.querySelector(".weekly");
+const dailyState = document.querySelector(".daily");
+const monthlyState = document.querySelector(".monthly");
+
 function loadDaily() {
+  daily = true;
+  weekly = false;
+  monthly = false;
+
+  if (daily === true) {
+    dailyState.style.color = "#fff";
+    weeklyState.style.color = "#6e75c9";
+    monthlyState.style.color = "#6e75c9";
+  }
+
   for (let x = 0; x < data.length; x++) {
     let objTitle = data[x].title;
     let objTimeFrames = data[x].timeframes;
@@ -163,6 +180,15 @@ function loadDaily() {
 //   console.log(data[0]);
 
 function loadWeekly() {
+  daily = false;
+  weekly = true;
+  monthly = false;
+
+  if (weekly === true) {
+    weeklyState.style.color = "#fff";
+    dailyState.style.color = "#6e75c9";
+    monthlyState.style.color = "#6e75c9";
+  }
   for (let x = 0; x < data.length; x++) {
     let objTitle = data[x].title;
     let objTimeFrames = data[x].timeframes;
@@ -195,6 +221,16 @@ function loadWeekly() {
 }
 
 function loadMonthly() {
+  daily = false;
+  weekly = false;
+  monthly = true;
+
+  if (monthly === true) {
+    weeklyState.style.color = "#6e75c9";
+    dailyState.style.color = "#6e75c9";
+    monthlyState.style.color = "#fff";
+  }
+
   for (let x = 0; x < data.length; x++) {
     let objTitle = data[x].title;
     let objTimeFrames = data[x].timeframes;
@@ -225,5 +261,3 @@ function loadMonthly() {
     }
   }
 }
-
-// if title =
